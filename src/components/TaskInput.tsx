@@ -9,12 +9,16 @@ type Props = {
 const TaskInput: React.FC<Props> = ({ setTasks, tasks }) => {
     const [ inputTitle, setInputTitle ] = useState<string>('')
     const [ count, setCount ] = useState<number>(tasks.length + 1)
+    const [ isTitleEmpty, setIsTitleEmpty ] = useState<boolean>(false)
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setInputTitle(e.target.value)
     }
 
     const handleSubmit = () => {
+        if (inputTitle === '') {
+            return
+        }
         setCount(count + 1)
 
         const newTask: Task = {
@@ -34,6 +38,7 @@ const TaskInput: React.FC<Props> = ({ setTasks, tasks }) => {
                     <input
                         type="text"
                         className="input"
+                        placeholder="コメントを入力"
                         value={inputTitle}
                         onChange={handleInputChange}
                     />
