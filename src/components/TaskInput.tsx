@@ -33,7 +33,6 @@ const TaskInput: React.FC<Props> = ({ setTasks, tasks }) => {
                 <div className="inner">
                     <input
                         type="text"
-                        className="input"
                         value={inputTitle}
                         onChange={handleInputChange}
                     />
