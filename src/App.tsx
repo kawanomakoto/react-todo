@@ -22,8 +22,8 @@ const App: React.FC = () => {
 
     return (
         <div>
-            <TaskList setTasks={setTasks} tasks={tasks} />
             <TaskInput setTasks={setTasks} tasks={tasks} />
+            <TaskList setTasks={setTasks} tasks={tasks} />
         </div>
     )
 }
