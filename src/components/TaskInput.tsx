@@ -31,6 +31,7 @@ const TaskInput: React.FC<Props> = ({ setTasks, tasks }) => {
         <div>
             <div className="inputForm">
                 <div className="inner">
+                    <input type="text" className="input" />
                     <label>
                         コメント:
                         <input
