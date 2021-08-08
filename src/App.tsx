@@ -22,6 +22,7 @@ const App: React.FC = () => {
 
     return (
         <div>
+            <input type="text" className="input" />
             <TaskInput setTasks={setTasks} tasks={tasks} />
             <TaskList setTasks={setTasks} tasks={tasks} />
         </div>
