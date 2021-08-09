@@ -42,7 +42,7 @@ const TaskInput: React.FC<Props> = ({ setTasks, tasks }) => {
                         value={inputTitle}
                         onChange={handleInputChange}
                     />
-                    <button onClick={handleSubmit} className="btn is-primary">登録</button>
+                    <button onClick={handleSubmit} className="btn is-primary">追加</button>
                 </div>
             </div>
         </div>
