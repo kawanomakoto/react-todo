@@ -34,13 +34,9 @@ const TaskInput: React.FC<Props> = ({ setTasks, tasks }) => {
     return (
         <div>
             <div className="inputForm">
-                <div>
-                    <input type="text" className="input" style={{width: 50}} />
-                </div>
                 <div className="inner">
                     <input
                         type="text"
-                        className="input"
                         placeholder="コメントを入力"
                         value={inputTitle}
                         onChange={handleInputChange}

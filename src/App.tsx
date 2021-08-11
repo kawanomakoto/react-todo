@@ -21,9 +21,13 @@ const App: React.FC = () => {
     const [tasks, setTasks] = useState(initialState)
 
     return (
-        <div>
-            <TaskInput setTasks={setTasks} tasks={tasks} />
-            <TaskList setTasks={setTasks} tasks={tasks} />
+        <div className="sidebar-layout">
+            <div>
+                <TaskInput setTasks={setTasks} tasks={tasks} />
+            </div>
+            <div>
+                <TaskList setTasks={setTasks} tasks={tasks} />
+            </div>
         </div>
     )
 }
