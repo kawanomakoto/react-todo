@@ -25,7 +25,7 @@ const App: React.FC = () => {
             <div>
                 <div className="inputForm">
                     <div className="inner">
-                        <input type="text" className="input" />
+                        <input type="text" className="input2" />
                     </div>
                 </div>
             </div>

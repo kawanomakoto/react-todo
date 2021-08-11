@@ -63,6 +63,15 @@ display: block;
   border-radius: 7px;
   margin-right: 10px;
 }
+.inputForm .input2 {
+  width: 50%;
+  font-size: 15px;
+  outline: none;
+  border: solid 3px #d7d2cd;
+  padding: 10px;
+  border-radius: 7px;
+  margin-right: 10px;
+}
 .inputForm .input:focus {
   background: #f9f9f0;
 }
