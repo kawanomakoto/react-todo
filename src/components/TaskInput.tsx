@@ -34,8 +34,10 @@ const TaskInput: React.FC<Props> = ({ setTasks, tasks }) => {
     return (
         <div>
             <div className="inputForm">
-                <div className="inner">
+                <div>
                     <input type="text" className="input" style={{width: 50}} />
+                </div>
+                <div className="inner">
                     <input
                         type="text"
                         className="input"
