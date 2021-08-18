@@ -38,7 +38,6 @@ const TaskInput: React.FC<Props> = ({ setTasks, tasks }) => {
                     <input
                         type="text"
                         placeholder="コメントを入力"
-                        className="input"
                         value={inputTitle}
                         onChange={handleInputChange}
                     />
